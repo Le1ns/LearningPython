@@ -115,3 +115,13 @@ b = int(input())
 print(a, "+", b, "=", a + b)
 print(a, "-", b, "=", a - b)
 print(a, "*", b, "=", a * b)
+##8
+a = int(input())
+b = int(input())
+n = int(input())
+an = a + b*(n - 1)
+print(an)
+
+###9
+number = int(input())
+print(number, 2*number, 3*number, 4*number, 5*number, sep="---")
