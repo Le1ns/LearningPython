@@ -102,3 +102,48 @@ if notplus == 3:
     print(0)
 else:
     print(sum)
+#logical operations
+
+##1
+num = int(input())
+if -1 < num < 17:
+    print("Принадлежит")
+else:
+    print("Не принадлежит")
+
+##
+point = int(input())
+if point <= -3 or point >= 7:
+    print("Принадлежит")
+else:
+    print("Не принадлежит")
+
+##
+point = int(input())
+if -30 < point <= -2 or 7 < point <= 25:
+    print("Принадлежит")
+else:
+    print("Не принадлежит")
+##
+numer = int(input())
+if 999 < numer < 10000 and (numer % 7 == 0 or numer % 17 == 0):
+    print("YES")
+else:
+    print("NO")
+##triangle
+a, b, c = int(input()), int(input()), int(input())
+if a + b > c and a + c > b and c + b > a:
+    print("YES")
+else:
+    print("NO")
+##
+
+year = int(input())
+print(year % 4)
+print(year % 400)
+print(year % 100)
+if ((year % 4) == 0 and (year % 100) != 0) or (year % 400) == 0:
+    print("YES")
+else:
+    print("NO")
+
