@@ -146,4 +146,20 @@ if ((year % 4) == 0 and (year % 100) != 0) or (year % 400) == 0:
     print("YES")
 else:
     print("NO")
+##chakemate lodiya
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+
+if (0 < a  < 9 and 0 < b < 9 and 0 < c < 9 and 0 < d < 9) and (a == c or b == d):
+    print("YES")
+else:
+    print("NO")
+##chakemate king
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+if (0 < a < 9 and 0 < b < 9 and 0 < c < 9 and 0 < d < 9) and (a-1 <= c <= a+1 and b - 1 <= d <= b+1):
+    print("YES")
+else:
+    print("NO")
+
+
+#############Nested and cascading conditions
 
