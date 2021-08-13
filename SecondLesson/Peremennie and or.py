@@ -162,4 +162,153 @@ else:
 
 
 #############Nested and cascading conditions
+n, k = int(input()), int(input())
+if n == k:
+    print("Don't know")
+elif n > k:
+    print("No")
+else:
+    print("Yes")
+##
+a, b, c = int(input()), int(input()), int(input())
+if a == b == c:
+    print('Равносторонний')
+elif a==b or b==c or a==c:
+    print('Равнобедренный')
+else:
+    print("Разносторонний")
+##
+a, b, c = int(input()), int(input()), int(input())
+if a < b < c:
+    print(b)
+elif a < c < b:
+    print(c)
+elif b < a < c:
+    print(a)
+elif b < c < a:
+    print(c)
+elif c < a < b:
+    print(a)
+elif c < b < a:
+    print(b)
+##
+date = int(input())
+if date == 2:
+    print("28")
+elif date == 4 or date == 6 or date == 9 or date == 11:
+    print("30")
+else:
+    print("31")
+##
+weight = int(input())
+if weight < 60:
+    print("Легкий вес")
+elif 60<=weight<64:
+    print("Первый полусредний вес")
+elif 64<=weight<69:
+    print("Полусредний вес")
+##
+a = int(input())
+b = int(input())
+deystvie = input()
 
+if b == 0 and deystvie == "/":
+    print("На ноль делить нельзя!")
+elif deystvie == "+":
+    print(a+b)
+elif deystvie == "-":
+    print(a-b)
+elif deystvie == "*":
+    print(a*b)
+elif deystvie == "/":
+    print(a/b)
+else:
+    print("Неверная операция")
+
+##
+color1 = input()
+color2 = input()
+red = "красный"
+yellow = "желтый"
+blue = "синий"
+if color1 == red and color2 == red:
+    print("красный")
+elif color1 == yellow and color2 == yellow:
+    print("желтый")
+elif color1 == blue and color2 == blue:
+    print("синий")
+elif (color1 == red) and (color2 == yellow):
+    print("оранжевый")
+elif (color1 == yellow) and (color2 == red):
+    print("оранжевый")
+elif (color1 == red) and (color2 == blue):
+    print("фиолетовый")
+elif (color1 == blue) and (color2 == red):
+    print("фиолетовый")
+elif (color1 == yellow) and (color2 == blue):
+    print("зеленый")
+elif (color1 == blue) and (color2 == yellow):
+    print("зеленый")
+elif color1 == red and color2 == red:
+    print("красный")
+elif color1 == blue and color2 == blue:
+    print("синий")
+elif color1 == yellow and color2 == yellow:
+    print("желтый")
+else:
+    print("ошибка цвета")
+
+
+##
+number = int(input())
+
+if number < 0 or number > 36:
+    print("ошибка ввода")
+elif number == 0:
+    print("зеленый")
+elif (1 <= number <= 10) and (number % 2 == 0):
+    print("черный")
+elif (1 <= number <= 10) and (number % 2 != 0):
+    print("красный")
+elif (11 <= number <= 18) and (number % 2 == 0):
+    print("красный")
+elif (11 <= number <=18) and (number % 2 != 0):
+    print("черный")
+elif (19 <= number <= 28) and (number % 2 == 0):
+    print("черный")
+elif (19 <= number <= 28) and (number % 2 != 0):
+    print("красный")
+elif (29 <= number <= 36) and (number % 2 == 0):
+    print("красный")
+elif (29 <= number <= 36) and (number % 2 != 0):
+    print("черный")
+
+##
+a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
+
+if a1 < a2 and b1 < a2:
+    print("пустое множество")
+elif a1 > a2 and b2 < a1:
+    print("пустое множество") #6,10,1,5
+elif a2 > a1 and b2 < b1:
+    print(a2,b2)
+elif a1 < a2 < b1 and b2 >= b1:
+    print(a2, b1)
+elif a1 < b2 < b1 and a2 < a1:
+    print(a1,b2)
+elif a2 < a1 and b2 > b1:
+    print(a1, b1)
+elif a1 == b2:
+    print(a1)
+elif b1==a2:
+    print(a2)
+elif a1==a2 and b1==b2:
+    print(a1,b1)
+elif a1==a2 and b2 > b1:
+    print(a1,b1)
+elif b1==b2 and a1 > a2:
+    print(a1,b1)
+elif b1==b2 and a2 > a1:
+    print(a1, b1)
+elif a1==a2 and b1 > b2:
+    print(a1,b1)
