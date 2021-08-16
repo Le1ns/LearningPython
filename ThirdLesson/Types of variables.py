@@ -96,3 +96,52 @@ from math import *
 x1, y1, x2, y2 = float(input()), float(input()), float(input()), float(input())
 
 print(sqrt(pow(x1-x2, 2) + pow(y1-y2, 2)))
+##
+R = float(input())
+print(pi*pow(R,2))
+print(2*pi*R)
+##
+a, b = float(input()), float(input())
+
+sredneearifmeticheskoe = (a+b)/2
+sredneeGeom = sqrt(a*b)
+sredneeGarmon = (2*a*b) / (a + b)
+sredreekvadrat = sqrt((pow(a,2) + pow(b,2))/2)
+
+print(sredneearifmeticheskoe)
+print(sredneeGeom)
+print(sredneeGarmon)
+print(sredreekvadrat)
+
+##
+x = float(input())
+x = (x*pi) / 180
+
+print(sin(x)+cos(x)+pow(tan(x), 2))
+
+##
+from math import *
+x = float(input())
+print(ceil(x)+ floor(x))
+
+##
+from math import *
+a, b, c = float(input()), float(input()), float(input())
+
+D = pow(b, 2) - (4 * a * c)
+if D < 0:
+    print("Нет корней")
+elif D == 0:
+    print(-(b/(2*a)))
+else:
+    x1 = (-b + (sqrt(pow(b,2)-(4*a*c)))) / 2*a
+    x2 = (-b - (sqrt(pow(b,2)-(4*a*c)))) / 2*a
+    print(min(x1, x2))
+    print(max(x1, x2))
+
+##
+n, a = int(input()), float(input())
+print((n*pow(a,2))/(4*tan(pi/n)))
+
+
+
