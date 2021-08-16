@@ -90,3 +90,9 @@ print(a1+a2+a3+a4+a5)
 ##
 p1,p2,q1,q2 = int(input()), int(input()),int(input()),int(input())
 print((abs(p1-q1))+(abs(p2-q2)))
+
+##evklidovo rasstoyanie
+from math import *
+x1, y1, x2, y2 = float(input()), float(input()), float(input()), float(input())
+
+print(sqrt(pow(x1-x2, 2) + pow(y1-y2, 2)))
