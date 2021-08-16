@@ -143,5 +143,52 @@ else:
 n, a = int(input()), float(input())
 print((n*pow(a,2))/(4*tan(pi/n)))
 
+##
+print(""" "Python is a great language!", said Fred. "I don't ever remember having this much fun before." """)
 
+##
+firstname = input()
+lastname = input()
+
+print("Hello",  firstname, lastname + "!", "You just delved into Python" )
+##
+name = input()
+print("Футбольная команда", name, "имеет длину", len(name), "символов")
+##
+
+first = input()
+second = input()
+third = input()
+
+print(min(first, second, third, key=len))
+print(max(first, second, third, key=len))
+
+##
+a= len(input())
+b = len(input())
+c = len(input())
+
+
+if (2*b-c-a)*(2*c-b-a)*(2*a-b-c) == 0:
+    print("YES")
+else:
+    print("NO")
+##
+s = input()
+if 'синий' in s:
+    print("YES")
+else:
+    print("NO")
+##
+s= input()
+if "суббота" in s or "воскресенье" in s:
+    print("YES")
+else:
+    print("NO")
+##
+s = input()
+if '@' in s and '.' in s:
+    print("YES")
+else:
+    print("NO")
 
