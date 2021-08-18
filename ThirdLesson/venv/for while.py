@@ -81,3 +81,25 @@ number = int(input())
 
 for i in range (1,11,1):
     print(number, "x", i, '=', number*i)
+
+##
+total = 0
+for i in range(1, 6):
+    total += i
+    print(total, end='')
+##
+a, b = int(input()), int(input())
+total = 0
+for i in range(a, b + 1):
+
+    if i % 10 == 4 or i % 10 == 9:
+        total = total + 1
+
+print(total)
+
+##
+total = 0
+for i in range(int(input())):
+    temp = int(input())
+    total = total + temp
+print(total)
