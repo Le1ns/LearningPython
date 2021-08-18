@@ -189,4 +189,38 @@ for i in range(1,n + 1):
      a = b
      b = x
      print(x ,end=" ")
+##WHILE
+text = input()
+while  text != "КОНЕЦ" and text != "конец":
+    print(text)
+    text = input()
+##
+text = input()
+sum = 0
+while  text != "стоп" and text != "хватит" and text != "достаточно":
+    sum = sum + 1
+    text = input()
+print(sum)
+
+##
+numbers = int(input())
+while numbers % 7 == 0:
+    print(numbers)
+    numbers = int(input())
+
+##
+numbers = int(input())
+sum = 0
+while numbers >= 0:
+    sum = sum + numbers
+    numbers = int(input())
+print(sum)
+##
+stop = int(input())
+sum = 0
+while 0 < stop <= 5:
+    if stop == 5:
+        sum = sum +1
+    stop = int(input())
+print(sum)
 
