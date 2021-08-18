@@ -103,3 +103,90 @@ for i in range(int(input())):
     temp = int(input())
     total = total + temp
 print(total)
+##
+from math import *
+temp = 1
+n = int(input())
+for i in range(2,n+1):
+    temp = temp + (1/i)
+
+print(temp - log(n))
+##
+n = int(input())
+count = 0
+for i in range(1, n + 1):
+    temp = i * i
+    if  temp %10 == 5:
+        count = count + i
+print(count)
+
+##
+total = 1
+n = int(input())
+for i in range(1,n+1):
+    total = i * total
+print(total)
+
+##
+temp = True
+temp1 = 1
+for i in range (10):
+  a = int(input())
+  if a == 0:
+      temp = False
+  else:
+      temp1 = temp1 * a
+print(temp1)
+
+##
+n = int(input())
+sum = 0
+for i in range(1,n + 1):
+    if n % i == 0:
+        sum = sum+i
+print(sum)
+##
+total = 0
+n = int(input())
+for i in range(1, n + 1):
+    total = total + pow(-1, i + 1) * i
+print(total)
+##
+largest = 0
+prelagerst = 1
+
+for i in range(1,int(input()) +1):
+    a = int(input())
+    if a > largest:
+        prelagerst = largest
+        largest = a
+    elif a < largest and a > prelagerst:
+        prelagerst = a
+print(largest)
+print(prelagerst)
+##
+count = 0
+for i in range(10):
+    a = int(input())
+    if a % 2 == 0:
+        count = count +1
+    else: count -1
+if count == 10:
+    print("YES")
+else:
+    print("NO")
+##
+n = int(input())
+
+x = 0
+for i in range(1,n + 1):
+    if i <= 2:
+        a = 1
+        b = 1
+        print(a, end=" ")
+    elif i > 2:
+     x = a + b
+     a = b
+     b = x
+     print(x ,end=" ")
+
