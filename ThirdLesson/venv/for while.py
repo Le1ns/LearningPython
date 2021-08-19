@@ -224,3 +224,28 @@ while 0 < stop <= 5:
     stop = int(input())
 print(sum)
 
+##
+sum = 0
+cost = int(input())
+while cost != 0:
+    if cost >= 25:
+        cost = cost - 25
+        sum = sum + 1
+        print(cost)
+    elif 10 <= cost < 25:
+        cost = cost - 10
+        sum = sum + 1
+        print(cost)
+    elif 5 <= cost < 10:
+        cost = cost - 5
+        sum = sum + 1
+        print(cost)
+    elif 1 <= cost < 5:
+        cost = cost - 1
+        sum = sum + 1
+        print(cost)
+print(sum)
+
+
+##
+nu
