@@ -191,4 +191,175 @@ if '@' in s and '.' in s:
     print("YES")
 else:
     print("NO")
+## 7.1 for
+for i in range(10):
+    print("Python is awesome!")
 
+##
+s = input()
+many = int(input())
+for i in range(many):
+    print(s)
+
+###
+for _ in range(6):
+    print("AAA", end="\n")
+for _ in range(5):
+    print("BBBB", end="\n")
+print("E")
+for _ in range(9):
+    print("TTTTT", end="\n")
+print("G")
+
+###
+n = int(input())
+for _ in range(n):
+    print("*" * 19)
+
+###
+s = input()
+for i in range(10):
+    print(i, s)
+
+###
+n = int(input())
+for n in range(n+1):
+    print("Квадрат числа", n,"равен", n*n)
+
+##
+n = int(input())
+for i in range(n+1):
+    print('*' * (n-i))
+
+###
+m = float(input()) #start osobey
+p = float(input()) #procent
+n = int(input()) # dni
+
+for i in range(0,n):
+    print(i+1,m*(p/100+1)**i)
+
+### 7.2
+m = int(input())
+n = int(input())
+
+for i in range(m,n+1):
+    print(i)
+###
+m = int(input())
+n = int(input())
+if m > n:
+    for i in range(m,n-1,-1):
+        print(i)
+elif m < n:
+    for i in range(m,n+1):
+        print(i)
+elif m == n:
+    print(m)
+
+###
+m, n = int(input()), int(input())
+
+for i in range(m,n+1,1):
+    if i % 17 ==0 or i%10 ==9 or i%15 == 0:
+        print(i)
+###
+number = int(input())
+
+for i in range (1,11,1):
+    print(number, "x", i, '=', number*i)
+
+##7.5
+num = int(input())
+
+while num != 0:
+    last_digit = num % 10
+    print(last_digit)
+    num = num // 10
+
+##
+num = int(input())
+while num != 0:
+    last_digit = num % 10
+    print(last_digit, end="")
+    num = num // 10
+
+##
+total = 0
+largest = 0
+smallest = 9
+n = int(input())
+while n != 0:
+    total = n % 10
+    if total <= smallest:
+        smallest = total
+    if total >= largest:
+        largest = total
+
+    n=n // 10
+print("Максимальная цифра равна", largest)
+print("Минимальная цифра равна", smallest)
+
+##
+total = 0
+sum = 0
+number = 0
+proizvedenie = 1
+srednee = 0
+firstnum = 0
+
+chislo = int(input())
+firstnum = chislo
+lastnum = chislo % 10
+while chislo != 0:
+    total = chislo % 10
+    sum = sum + total
+    proizvedenie = proizvedenie * total
+    number = number + 1
+    chislo = chislo // 10
+firstnum = firstnum // (pow(10,(number - 1)))
+srednee = sum / number
+sumfl = firstnum + lastnum
+print(sum,number,proizvedenie,srednee,firstnum,sumfl, sep="\n")
+
+##
+n = int(input())
+
+while n > 9:
+    number = n % 10 #get last
+    n = n // 10 #get part without last
+print(number)
+
+##
+n = int(input())
+flag = 0
+last_digit = n % 10
+while n != 0:
+    j = n % 10
+    if last_digit != j:
+        flag = flag + 1
+    n = n // 10
+if flag == 0:
+    print("YES")
+else:
+    print("NO")
+##
+n = int(input())
+flag = 0
+while n > 9:
+    last_digit = n % 10
+    n = n // 10
+    prelast_digit = n % 10
+    if prelast_digit < last_digit:
+        flag = flag + 1
+if flag == 0:
+    print("YES")
+else:
+    print("NO")
+
+##7.6
+n = int(input())
+for i in range(2, n+1):
+    if n % i == 0:
+        break
+print(i)
